@@ -1,0 +1,161 @@
+/* ===================================
+            PRESSET STYLES       
+====================================*/
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+.centerfy ,
+.centerfy-col {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerfy-col {
+    flex-direction : column;
+}
+footer,
+nav  {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #73cf09;
+    color: #faecec;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    padding-right : 1%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer {
+    height: 10vh;
+    text-align: center;
+    justify-content: center;
+}
+nav {
+    min-height: 13vh;
+    justify-content: space-between;
+}
+#logo {
+    width: 65px;
+    height: 65px;
+    margin-right: auto;
+    margin-left : 15px;
+    display: flex;
+     background-color: white;
+}
+.logo {
+    width: 99%;
+    height:99%;
+    border-radius: 50%;
+    z-index: 3000;
+    border : 5px solid rgb(0, 0, 0);
+}
+/* ===================================
+            NAV SECTION        
+====================================*/
+nav ul {
+    list-style : none;
+    display: flex;
+    justify-content: space-around;
+    width : 30%;
+}
+/* ===================================
+            HOME SECTION        
+====================================*/
+#redirect {
+    display: flex;
+    width: 100%;
+    background: url('../imgs/error.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: 900;
+    background-color: #1dfc1d7d;
+    background-blend-mode: overlay;
+}
+.redirect {
+    width: 455px;
+    height: 320px;
+    margin: auto;
+    text-align: center;
+    background-color: #000000c2;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px 0px black;
+}
+ .redirect h2 {
+    font-size : 32px;
+    font-style : italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+  .redirect p {
+    font-size : 20px;
+    font-style : italic;
+    font-family: Geneva, Verdana, sans-serif;
+    font-weight: 300;
+ }
+ .redirect span {
+    font-size :28px;
+    font-style : italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color : #73cf09;
+ }
+
+/* ===================================
+            POST SECTION        
+====================================*/
+
+ #posts {
+    flex-wrap :wrap;
+}
+.post {
+    width: 400px;
+    min-height: 197px;
+    margin: 10px;
+    box-shadow: 2px 1px 3px black;
+    padding: 2%;
+    background-color: #f9f9f9;
+    transition: all 0.6s ease-in-out;
+}
+.post h4 {
+    margin: 13px 0px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #73cf09;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.post p {
+    margin: 10px 0px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #302929;
+    letter-spacing: 2.2px;
+    font-family: sans-serif;
+}
+#posts .header{
+    display :none;
+}
+#home-sec {
+    width : 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#home-sec  #posts{
+    width : 100%;
+    min-height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .succes {
+    color :#ffffff !important;
+    font-weight: 700;
+}
+.error {
+    color :rgb(185, 56, 56)!important;
+    font-weight: 700;
+}
